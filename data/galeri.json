@@ -1,0 +1,51 @@
+[
+{
+    "id": 1,
+    "judul": "Buka Puasa Bersama 2026",
+    "deskripsi": "Momen indah buka puasa bersama",
+    "tanggal": "2026-03-15",
+    "agenda_id": 1,
+    "foto": "assets/img/galeri/default.svg"
+  },
+  {
+    "id": 2,
+    "judul": "Reuni Akbar 2025",
+    "deskripsi": "Reuni akbar alumni 2017",
+    "tanggal": "2025-12-20",
+    "agenda_id": 2,
+    "foto": "assets/img/galeri/default.svg"
+  },
+  {
+    "id": 3,
+    "judul": "Study Tour",
+    "deskripsi": "Study tour ke museum",
+    "tanggal": "2025-07-10",
+    "agenda_id": 3,
+    "foto": "assets/img/galeri/default.svg"
+  },
+  {
+    "id": 4,
+    "judul": "Bakti Sosial",
+    "deskripsi": "Pembagian paket шкільна",
+    "tanggal": "2024-11-15",
+    "agenda_id": 4,
+    "foto": "assets/img/galeri/default.svg"
+  },
+  {
+    "id": 5,
+    "judul": "Halal Bihalal",
+    "deskripsi": "Momen halal bihalal",
+    "tanggal": "2024-05-10",
+    "agenda_id": 5,
+    "foto": "assets/img/galeri/default.svg"
+  },
+  {
+    "id": 6,
+    "judul": "Foto Kelas",
+    "deskripsi": "Kenangan foto kelas",
+    "tanggal": "2017-06-01",
+    "agenda_id": null,
+    "foto": "assets/img/galeri/default.svg"
+  }
+]
+

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pengaturan - Admin Alumni SDN 1 Senteluk 2017</title>
+  
+  <link rel="icon" type="image/png" href="../assets/img/logo/logo.png">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/admin.css">
+</head>
+<body>
+  <div class="admin-layout">
+    <!-- Sidebar Overlay (for mobile) -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+    
+    <!-- Sidebar -->
+    <aside class="admin-sidebar" id="admin-sidebar">
+      <div class="admin-sidebar-header">
+        <a href="dashboard.html" class="admin-logo">
+          <div class="admin-logo-icon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+            </svg>
+          </div>
+          <span>Admin Panel</span>
+        </a>
+      </div>
+      
+      <div class="admin-sidebar-menu">
+        <div class="admin-menu-section">
+          <div class="admin-menu-section-title">Menu</div>
+          <a href="dashboard.html" class="admin-menu-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="7" height="7"></rect>
+              <rect x="14" y="3" width="7" height="7"></rect>
+              <rect x="14" y="14" width="7" height="7"></rect>
+              <rect x="3" y="14" width="7" height="7"></rect>
+            </svg>
+            <span>Dashboard</span>
+          </a>
+          <a href="alumni.html" class="admin-menu-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+              <circle cx="9" cy="7" r="4"></circle>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+            </svg>
+            <span>Kelola Alumni</span>
+          </a>
+          <a href="agenda.html" class="admin-menu-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+            <span>Kelola Agenda</span>
+          </a>
+          <a href="galeri.html" class="admin-menu-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+              <circle cx="8.5" cy="8.5" r="1.5"></circle>
+              <polyline points="21 15 16 10 5 21"></polyline>
+            </svg>
+            <span>Kelola Galeri</span>
+          </a>
+          <a href="settings.html" class="admin-menu-item active">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="3"></circle>
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+            </svg>
+            <span>Pengaturan</span>
+          </a>
+        </div>
+      </div>
+      
+      <div class="admin-sidebar-footer">
+        <div class="admin-user">
+          <div class="admin-user-avatar">A</div>
+          <div class="admin-user-info">
+            <div class="admin-user-name">Admin</div>
+            <div class="admin-user-role">Administrator</div>
+          </div>
+          <a href="#" id="logout-btn" title="Logout">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+              <polyline points="16 17 21 12 16 7"></polyline>
+              <line x1="21" y1="12" x2="9" y2="12"></line>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="admin-main">
+      <header class="admin-header">
+        <div class="admin-header-left">
+          <button class="admin-toggle" id="admin-toggle">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+          <div class="admin-breadcrumb">
+            <a href="dashboard.html">Admin</a>
+            <span>/</span>
+            <span class="current">Pengaturan</span>
+          </div>
+        </div>
+        
+        <div class="admin-header-right">
+          <button class="theme-toggle" title="Toggle Dark Mode">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <div class="admin-content" id="admin-settings">
+        <div class="admin-page-header">
+          <h1 class="admin-page-title">Pengaturan Website</h1>
+          <p class="admin-page-subtitle">Kelola pengaturan umum website</p>
+        </div>
+
+        <!-- Cloud Sync Section -->
+        <div class="settings-section" style="margin-bottom: 24px;">
+          <h3 class="settings-section-title">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle; margin-right: 8px;">
+              <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+            </svg>
+            Cloud Sync (JSONBin.io)
+            <span id="cloud-sync-status" class="cloud-status-badge inactive">Tidak Aktif</span>
+          </h3>
+          
+          <div class="admin-form-group">
+            <label class="admin-form-label">Password Admin</label>
+            <input type="password" id="setting-admin-password" class="admin-form-input" placeholder="Masukkan password untuk update">
+            <small style="color: var(--text-secondary); font-size: 12px;">Masukkan password "update" untuk menyimpan konfigurasi cloud</small>
+          </div>
+          
+          <div class="admin-form-group">
+            <label class="admin-form-label">BIN_ID</label>
+            <input type="text" id="setting-bin-id" class="admin-form-input" placeholder="Contoh: 69b119d4d746013455b0a8bc" value="69b119d4d746013455b0a8bc">
+            <small style="color: var(--text-secondary); font-size: 12px;">ID dari JSONBin yang dibuat di jsonbin.io</small>
+          </div>
+          
+          <div class="admin-form-group">
+            <label class="admin-form-label">API_KEY</label>
+            <input type="password" id="setting-api-key" class="admin-form-input" placeholder="Masukkan API Key Anda" value="$2a$10$xbBrXLenPoHz1D/q8sX8N.xMlSJ.gmy5W1SXUfduj1LgkxU.RIDce">
+            <small style="color: var(--text-secondary); font-size: 12px;">Secret Key dari JSONBin (dimulai dengan $2a$...)</small>
+          </div>
+          
+          <div class="admin-form-actions" style="gap: 10px; margin-top: 16px;">
+            <button type="button" id="test-connection-btn" class="btn btn-secondary">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle; margin-right: 4px;">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+              Test Koneksi
+            </button>
+            <button type="submit" form="settings-form" class="btn btn-primary">Simpan Konfigurasi</button>
+          </div>
+          
+          <div id="connection-result" class="connection-result" style="display: none; margin-top: 12px;"></div>
+          
+          <!-- Guide Card -->
+          <div class="guide-card" style="margin-top: 20px; padding: 16px; background: var(--bg-secondary); border-radius: 8px; border-left: 4px solid #2196F3;">
+            <h4 style="margin: 0 0 12px 0; font-size: 14px; color: #2196F3;">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle; margin-right: 4px;">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+              </svg>
+              Cara Membuat Bin Baru di JSONBin.io
+            </h4>
+            <ol style="margin: 0; padding-left: 20px; font-size: 13px; line-height: 1.6; color: var(--text-secondary);">
+              <li>Kunjungi <a href="https://jsonbin.io" target="_blank" style="color: #2196F3;">jsonbin.io</a> dan buat akun (atau login)</li>
+              <li>Klik tombol "Create New Bin" untuk membuat bin baru</li>
+              <li>Isi nama bin (opsional) dan klik "Create Bin"</li>
+              <li>Di halaman bin, klik icon "Secret Key" untuk melihat API Key Anda</li>
+              <li>Salin BIN_ID dari URL (contoh: jsonbin.io/<b>69b119d4d746013455b0a8bc</b>/...) dan API Key</li>
+              <li>Isi formulir di atas dengan BIN_ID dan API_KEY tersebut</li>
+            </ol>
+          </div>
+        </div>
+
+        <form id="settings-form">
+          <div class="settings-grid">
+            <div class="settings-section">
+              <h3 class="settings-section-title">Informasi Website</h3>
+              <div class="admin-form-group">
+                <label class="admin-form-label">Nama Website</label>
+                <input type="text" id="setting-nama" class="admin-form-input" placeholder="Alumni SDN 1 Senteluk 2017">
+              </div>
+              <div class="admin-form-group">
+                <label class="admin-form-label">Tagline</label>
+                <input type="text" id="setting-tagline" class="admin-form-input" placeholder="Membangun Silaturrahmi">
+              </div>
+            </div>
+            
+            <div class="settings-section">
+              <h3 class="settings-section-title">Kontak</h3>
+              <div class="admin-form-group">
+                <label class="admin-form-label">Email</label>
+                <input type="email" id="setting-email" class="admin-form-input" placeholder="email@example.com">
+              </div>
+              <div class="admin-form-group">
+                <label class="admin-form-label">WhatsApp</label>
+                <input type="text" id="setting-whatsapp" class="admin-form-input" placeholder="+6281234567890">
+              </div>
+              <div class="admin-form-group">
+                <label class="admin-form-label">Instagram</label>
+                <input type="text" id="setting-instagram" class="admin-form-input" placeholder="@alumnisdn1senteluk2017">
+              </div>
+            </div>
+          </div>
+          
+          <div class="admin-form-actions">
+            <button type="submit" class="btn btn-primary">Simpan Pengaturan</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </div>
+
+  <!-- Scripts -->
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/sync.js"></script>
+  <script src="../assets/js/admin.js"></script>
+</body>
+</html>
+

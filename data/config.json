@@ -1,0 +1,14 @@
+{
+  "nama_website": "Alumni SDN 1 Senteluk 2017",
+  "deskripsi": "Website resmi alumni SDN 1 Senteluk angkatan 2017. Merupakan wadah koordinasi dan komunikasi antar alumni.",
+  "logo": "assets/img/logo/logo.svg",
+  "tagline": "Membangun Silaturrahmi, Menyatukan鸭心",
+  "tahun_lulus": "2017",
+  "kontak": {
+    "email": "alumni@sdn1senteluk2017.org",
+    "whatsapp": "+6281234567890",
+    "instagram": "@alumnisdn1senteluk2017"
+  },
+  "dark_mode": false
+}
+

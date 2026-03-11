@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daftar Alumni - Alumni SDN 1 Senteluk 2017</title>
+  
+  <link rel="icon" type="image/png" href="assets/img/logo/logo.png">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/cards.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-logo">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+          <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+        </svg>
+        <span>Alumni SDN 1 Senteluk 2017</span>
+      </a>
+      
+      <ul class="navbar-menu">
+        <li><a href="index.html" class="navbar-link">Beranda</a></li>
+        <li><a href="agenda.html" class="navbar-link">Agenda</a></li>
+        <li><a href="galeri.html" class="navbar-link">Galeri</a></li>
+        <li><a href="alumni.html" class="navbar-link active">Alumni</a></li>
+        <li><a href="index.html#tentang" class="navbar-link">Tentang</a></li>
+      </ul>
+      
+      <div class="navbar-actions">
+        <a href="admin/login.html" class="btn btn-outline btn-sm" title="Login Admin">
+          <i class="bi bi-box-arrow-in-right"></i>
+          <span>Login</span>
+        </a>
+        <button class="theme-toggle" title="Toggle Dark Mode">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+        
+        <button class="navbar-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="page-header">
+    <div class="container">
+      <h1>Daftar Alumni</h1>
+      <p class="rainbow-text" style="font-size: 1.5rem; margin-top: 1rem;">SDN 1 Senteluk</p>
+      <p>Kenalilah para alumni SDN 1 Senteluk angkatan 2017</p>
+    </div>
+  </header>
+
+  <!-- Alumni Content -->
+  <section class="section">
+    <div class="container">
+      <!-- Filter & Search -->
+      <div class="filter-bar">
+        <div class="search-box">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.35-4.35"></path>
+          </svg>
+          <input type="text" id="alumni-search" placeholder="Cari alumni...">
+        </div>
+        <div class="filter-info">
+          <span>Total: <strong id="alumni-count">0</strong> alumni</span>
+        </div>
+      </div>
+
+      <!-- Alumni Grid -->
+      <div class="alumni-grid" id="alumni-grid">
+        <!-- Alumni cards will be loaded here -->
+      </div>
+
+      <!-- Pagination -->
+      <div class="pagination" id="pagination"></div>
+    </div>
+  </section>
+
+  <!-- Alumni Detail Modal -->
+  <div class="modal" id="alumni-detail-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Detail Alumni</h3>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <!-- Content will be loaded here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" onclick="AlumniPage.closeLightbox()">&times;</button>
+    <img class="lightbox-image" src="" alt="">
+    <div class="lightbox-caption">
+      <h3 class="lightbox-title"></h3>
+      <p class="lightbox-description"></p>
+    </div>
+    <button class="lightbox-download" id="lightbox-download" title="Download Foto">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+        <polyline points="7 10 12 15 17 10"></polyline>
+        <line x1="12" y1="15" x2="12" y2="3"></line>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Tentang Kami</h4>
+          <p>Website resmi Alumni SDN 1 Senteluk angkatan 2017. Mari kita jaga silaturrahmi bersama.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Link Cepat</h4>
+          <a href="index.html">Beranda</a>
+          <a href="alumni.html">Alumni</a>
+          <a href="agenda.html">Agenda</a>
+          <a href="galeri.html">Galeri</a>
+        </div>
+        <div class="footer-section">
+          <h4>Kontak</h4>
+          <p>Email: <span id="footer-email">alumnisdnsenteluk@gmail.com</span></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Alumni SDN 1 Senteluk 2017</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/sync.js"></script>
+  <script src="assets/js/alumni.js"></script>
+</body>
+</html>
+

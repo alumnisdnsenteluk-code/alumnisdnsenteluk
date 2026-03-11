@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Admin - Alumni SDN 1 Senteluk 2017</title>
+  
+  <link rel="icon" type="image/png" href="../assets/img/logo/logo.png">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/admin.css">
+</head>
+<body>
+  <!-- Login Page -->
+  <div class="admin-login">
+    <div class="admin-login-container">
+      <div class="admin-login-card">
+        <div class="admin-login-header">
+          <div class="admin-login-logo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+              <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+            </svg>
+          </div>
+          <h1 class="admin-login-title">Admin Login</h1>
+          <p class="admin-login-subtitle">Masuk ke panel administrator</p>
+        </div>
+        
+        <form class="admin-login-form" id="login-form">
+          <div class="form-group">
+            <label class="form-label" for="username">Username</label>
+            <input type="text" id="username" class="form-input" placeholder="Masukkan username" required>
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label" for="password">Password</label>
+            <input type="password" id="password" class="form-input" placeholder="Masukkan password" required>
+          </div>
+          
+          <div id="login-error" class="alert alert-error" style="display: none;"></div>
+          
+          <button type="submit" class="btn btn-primary btn-lg">
+            Masuk
+          </button>
+        </form>
+        
+        <div class="admin-login-footer">
+          <p>Username: admin | Password: senteluk2017</p>
+          <a href="../index.html">&larr; Kembali ke Website</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/admin.js"></script>
+</body>
+</html>
+

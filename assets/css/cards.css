@@ -1,0 +1,649 @@
+/* ========================================
+   Card Styles
+   ======================================== */
+
+/* ========================================
+   Alumni Card
+   ======================================== */
+.alumni-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-lg);
+}
+
+@media (max-width: 1024px) {
+  .alumni-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .alumni-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .alumni-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.alumni-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-normal);
+}
+
+.alumni-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+}
+
+.alumni-card-image {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  overflow: hidden;
+  background: var(--bg-secondary);
+}
+
+.alumni-card-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+
+.alumni-card:hover .alumni-card-image img {
+  transform: scale(1.1);
+}
+
+.alumni-card-image .default-avatar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+}
+
+.alumni-card-image .default-avatar svg {
+  width: 50%;
+  height: 50%;
+  color: var(--text-inverse);
+  opacity: 0.8;
+}
+
+.alumni-card-body {
+  padding: var(--spacing-lg);
+  text-align: center;
+}
+
+.alumni-card-name {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-xs);
+  color: var(--text-primary);
+}
+
+.alumni-card-job {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.alumni-card-actions {
+  display: flex;
+  gap: var(--spacing-sm);
+  justify-content: center;
+}
+
+.alumni-card-actions .btn {
+  padding: var(--spacing-xs) var(--spacing-sm);
+  font-size: 0.75rem;
+}
+
+/* ========================================
+   Agenda Card
+   ======================================== */
+.agenda-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.agenda-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+}
+
+.agenda-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+}
+
+.agenda-card-header {
+  position: relative;
+  padding: var(--spacing-lg);
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+  color: var(--text-inverse);
+}
+
+.agenda-card-date {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  font-size: 0.875rem;
+  opacity: 0.9;
+  margin-bottom: var(--spacing-sm);
+}
+
+.agenda-card-date svg {
+  width: 16px;
+  height: 16px;
+}
+
+.agenda-card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  color: var(--text-inverse);
+}
+
+.agenda-card-badge {
+  position: absolute;
+  top: var(--spacing-lg);
+  right: var(--spacing-lg);
+  background: rgba(255, 255, 255, 0.2);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.agenda-card-body {
+  padding: var(--spacing-lg);
+  flex: 1;
+}
+
+.agenda-card-description {
+  color: var(--text-secondary);
+  margin-bottom: var(--spacing-md);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+.agenda-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--border-color);
+}
+
+.agenda-card-info-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.agenda-card-info-item svg {
+  width: 16px;
+  height: 16px;
+  color: var(--primary-color);
+}
+
+.agenda-card-footer {
+  padding: var(--spacing-lg);
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.agenda-card-actions {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+/* ========================================
+   Galeri Card
+   ======================================== */
+.galeri-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--spacing-md);
+}
+
+@media (max-width: 1024px) {
+  .galeri-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .galeri-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .galeri-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.galeri-item {
+  position: relative;
+  padding-top: 100%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  cursor: pointer;
+  background: var(--bg-secondary);
+}
+
+.galeri-item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+
+.galeri-item:hover img {
+  transform: scale(1.1);
+}
+
+.galeri-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+  display: flex;
+  align-items: flex-end;
+  padding: var(--spacing-lg);
+}
+
+.galeri-item:hover .galeri-overlay {
+  opacity: 1;
+}
+
+.galeri-overlay-text {
+  color: var(--text-inverse);
+}
+
+.galeri-overlay-title {
+  font-weight: 600;
+  margin-bottom: var(--spacing-xs);
+}
+
+.galeri-overlay-description {
+  font-size: 0.875rem;
+  opacity: 0.8;
+}
+
+/* ========================================
+   Album Card
+   ======================================== */
+.album-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+}
+
+.album-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-normal);
+}
+
+.album-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+}
+
+.album-card-cover {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.album-card-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-normal);
+}
+
+.album-card:hover .album-card-cover img {
+  transform: scale(1.1);
+}
+
+.album-card-photo-count {
+  position: absolute;
+  bottom: var(--spacing-md);
+  right: var(--spacing-md);
+  background: rgba(0, 0, 0, 0.6);
+  color: var(--text-inverse);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.album-card-body {
+  padding: var(--spacing-lg);
+}
+
+.album-card-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-xs);
+}
+
+.album-card-date {
+  color: var(--text-light);
+  font-size: 0.875rem;
+}
+
+/* ========================================
+   Stats Card (Dashboard)
+   ======================================== */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+.stat-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-normal);
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.stat-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-lg);
+}
+
+.stat-icon.primary {
+  background: rgba(37, 99, 235, 0.1);
+  color: var(--primary-color);
+}
+
+.stat-icon.success {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--secondary-color);
+}
+
+.stat-icon.warning {
+  background: rgba(245, 158, 11, 0.1);
+  color: var(--accent-color);
+}
+
+.stat-icon svg {
+  width: 28px;
+  height: 28px;
+}
+
+.stat-content h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-xs);
+  color: var(--text-primary);
+}
+
+.stat-content p {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  margin-bottom: 0;
+}
+
+/* ========================================
+   Activity Card
+   ======================================== */
+.activity-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.activity-item {
+  display: flex;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md) 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.activity-item:last-child {
+  border-bottom: none;
+}
+
+.activity-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-full);
+  background: var(--bg-secondary);
+  flex-shrink: 0;
+}
+
+.activity-icon svg {
+  width: 20px;
+  height: 20px;
+  color: var(--primary-color);
+}
+
+.activity-content {
+  flex: 1;
+}
+
+.activity-title {
+  font-weight: 600;
+  margin-bottom: var(--spacing-xs);
+}
+
+.activity-time {
+  font-size: 0.75rem;
+  color: var(--text-light);
+}
+
+/* ========================================
+   Table Card
+   ======================================== */
+.table-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.table-header {
+  padding: var(--spacing-lg);
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+}
+
+.table-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: var(--bg-secondary);
+}
+
+th {
+  padding: var(--spacing-md) var(--spacing-lg);
+  text-align: left;
+  font-weight: 600;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+td {
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-bottom: 1px solid var(--border-color);
+}
+
+tbody tr {
+  transition: background var(--transition-fast);
+}
+
+tbody tr:hover {
+  background: var(--bg-secondary);
+}
+
+/* ========================================
+   Filter & Search
+   ======================================== */
+.filter-bar {
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+  margin-bottom: var(--spacing-xl);
+  padding: var(--spacing-lg);
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.search-box {
+  flex: 1;
+  min-width: 250px;
+  position: relative;
+}
+
+.search-box input {
+  width: 100%;
+  padding: var(--spacing-sm) var(--spacing-md);
+  padding-left: 40px;
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.search-box input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.search-box svg {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  color: var(--text-light);
+}
+
+.filter-select {
+  min-width: 150px;
+}
+
+.filter-select select {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+/* ========================================
+   Pagination
+   ======================================== */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-xl);
+}
+
+.pagination-btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background: var(--bg-primary);
+  color: var(--text-secondary);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.pagination-btn:hover,
+.pagination-btn.active {
+  background: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--text-inverse);
+}
+
+.pagination-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+

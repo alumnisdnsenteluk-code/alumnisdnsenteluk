@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "judul": "Buka Puasa Bersama 2026",
+    "tanggal": "2026-03-15",
+    "tahun": "2026",
+    "deskripsi": "Acara buka puasa bersama alumni SDN 1 Senteluk angkatan 2017. Mari kita jaga silaturrahmi meski sudah terpisah jarak.",
+    "lokasi": "Masjid Al-Hidayah, Senteluk",
+    "waktu": "17.30 WIB - 19.30 WIB"
+  },
+  {
+    "id": 2,
+    "judul": "Reuni Akbar 2025",
+    "tanggal": "2025-12-20",
+    "tahun": "2025",
+    "deskripsi": "Reuni akbar alumni SDN 1 Senteluk 2017. Saatnya kita berkumpul kembali dan mengenang masa-masa indah di sekolah tercinta.",
+    "lokasi": " SDN 1 Senteluk",
+    "waktu": "08.00 WIB - 15.00 WIB"
+  },
+  {
+    "id": 3,
+    "judul": "Study Tour Bersama",
+    "tanggal": "2025-07-10",
+    "tahun": "2025",
+    "deskripsi": "Study tour bersama alumni ke museum dan tempat bersejarah. Mengisi liburan dengan pengetahuan dan pengalaman baru.",
+    "lokasi": "Museum Nasional & Monas",
+    "waktu": "07.00 WIB - 17.00 WIB"
+  },
+  {
+    "id": 4,
+    "judul": "Bakti Sosial 2024",
+    "tanggal": "2024-11-15",
+    "tahun": "2024",
+    "deskripsi": "Bakti sosial berupa pembagian paket шкільна untuk anak kurang mampu di sekitar Senteluk.",
+    "lokasi": "Kantor Desa Senteluk",
+    "waktu": "09.00 WIB - 12.00 WIB"
+  },
+  {
+    "id": 5,
+    "judul": "Halal Bihalal 2024",
+    "tanggal": "2024-05-10",
+    "tahun": "2024",
+    "deskripsi": " Halal bihalal Idulfitri 1445 H. Momen maaf-maafan dan mempererat tali persaudaraan.",
+    "lokasi": "Gedung Serbaguna Senteluk",
+    "waktu": "10.00 WIB - 14.00 WIB"
+  }
+]
+

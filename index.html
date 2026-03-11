@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alumni SDN 1 Senteluk 2017</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/img/logo/logo.png">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/cards.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-logo">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+          <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+        </svg>
+        <span>Alumni SDN 1 Senteluk 2017</span>
+      </a>
+      
+      <ul class="navbar-menu">
+        <li><a href="index.html" class="navbar-link active">Beranda</a></li>
+        <li><a href="agenda.html" class="navbar-link">Agenda</a></li>
+        <li><a href="galeri.html" class="navbar-link">Galeri</a></li>
+        <li><a href="alumni.html" class="navbar-link">Alumni</a></li>
+        <li><a href="#tentang" class="navbar-link">Tentang</a></li>
+      </ul>
+      
+      <div class="navbar-actions">
+        <a href="admin/login.html" class="btn btn-outline btn-sm" title="Login Admin">
+          <i class="bi bi-box-arrow-in-right"></i>
+          <span>Login</span>
+        </a>
+        <button class="theme-toggle" title="Toggle Dark Mode">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+        
+        <button class="navbar-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-background"></div>
+    <div class="hero-pattern"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Selamat Datang di Website Alumni SDN 1 Senteluk 2017</h1>
+        <p>Membangun silaturrahmi dan persaudaraan antar alumni SDN 1 Senteluk angkatan 2017.</p>
+        <div class="hero-buttons">
+          <a href="alumni.html" class="btn btn-primary">Lihat Alumni</a>
+          <a href="agenda.html" class="btn btn-outline">Agenda Terbaru</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="hero-stat-number" id="alumni-count">0</div>
+            <div class="hero-stat-label">Alumni</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number" id="agenda-count">0</div>
+            <div class="hero-stat-label">Agenda</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-number" id="galeri-count">0</div>
+            <div class="hero-stat-label">Foto</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <h1 class="rainbow-text">SDN 1 Senteluk</h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sambutan Section -->
+  <section class="section" id="tentang">
+    <div class="container">
+      <h2 class="section-title">Sambutan Alumni</h2>
+      <div class="grid grid-2" style="align-items: center;">
+        <div>
+          <img src="assets/img/default/sambutan.jpg" alt="Sambutan" style="width: 100%; border-radius: 1rem; box-shadow: var(--shadow-lg);" onerror="this.style.display='none'">
+        </div>
+        <div>
+          <h3>Assalamu'alaikum Warahmatullahi Wabarakatuh</h3>
+          <p>Selamat datang di website resmi Alumni SDN 1 Senteluk angkatan 2017. Website ini dibuat sebagai wadah untuk kita semua alumni tetap terhubung dan menjaga silaturrahmi meskipun sudah tersebar di berbagai daerah.</p>
+          <p>Semoga website ini dapat memberikan manfaat bagi kita semua dalam mempererat persaudaraan dan ukhuwah Islamiyah.</p>
+          <p><strong>Wassalamu'alaikum Warahmatullahi Wabarakatuh</strong></p>
+          <p class="text-secondary">- Alumni SDN 1 Senteluk 2017</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Agenda Terbaru Section -->
+  <section class="section" style="background: var(--bg-secondary);">
+    <div class="container">
+      <h2 class="section-title">Agenda Terbaru</h2>
+      <div class="agenda-grid" id="home-agenda-grid">
+        <!-- Agenda akan dimuat di sini -->
+      </div>
+      <div class="text-center mt-4">
+        <a href="agenda.html" class="btn btn-primary">Lihat Semua Agenda</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeri Section -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Galeri Terbaru</h2>
+      <div class="galeri-grid" id="home-galeri-grid">
+        <!-- Galeri akan dimuat di sini -->
+      </div>
+      <div class="text-center mt-4">
+        <a href="galeri.html" class="btn btn-primary">Lihat Semua Foto</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Tentang Kami</h4>
+          <p>Website resmi Alumni SDN 1 Senteluk angkatan 2017. Mari kita jaga silaturrahmi bersama.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Link Cepat</h4>
+          <a href="index.html">Beranda</a>
+          <a href="alumni.html">Alumni</a>
+          <a href="agenda.html">Agenda</a>
+          <a href="galeri.html">Galeri</a>
+        </div>
+        <div class="footer-section">
+          <h4>Kontak</h4>
+          <p>Email: <span id="footer-email">alumnisdnsenteluk@gmail.com</span></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Alumni SDN 1 Senteluk 2017</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" onclick="LightboxImage.close()">&times;</button>
+    <button class="lightbox-prev" onclick="Lightbox.navigate(-1)">&#10094;</button>
+    <button class="lightbox-next" onclick="Lightbox.navigate(1)">&#10095;</button>
+    <img class="lightbox-image" src="" alt="">
+    <div class="lightbox-caption">
+      <h3 class="lightbox-title"></h3>
+      <p class="lightbox-description"></p>
+      <p class="lightbox-date"></p>
+    </div>
+    <button class="lightbox-download" id="lightbox-download" title="Download Foto">
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+        <polyline points="7 10 12 15 17 10"></polyline>
+        <line x1="12" y1="15" x2="12" y2="3"></line>
+      </svg>
+    </button>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/sync.js"></script>
+  <script src="assets/js/upload.js"></script>
+  <script src="assets/js/agenda.js"></script>
+  <script src="assets/js/galeri.js"></script>
+  <script>
+    // Load homepage data
+    document.addEventListener('DOMContentLoaded', async () => {
+      // Load stats
+      const alumni = DataManager.alumni.getAll();
+      const agenda = DataManager.agenda.getAll();
+      const galeri = DataManager.galeri.getAll();
+      
+      document.getElementById('alumni-count').textContent = alumni.length || 0;
+      document.getElementById('agenda-count').textContent = agenda.length || 0;
+      document.getElementById('galeri-count').textContent = galeri.length || 0;
+      
+      // Load recent agenda (3 items)
+      const recentAgenda = agenda.slice(0, 3);
+      const agendaGrid = document.getElementById('home-agenda-grid');
+      
+      if (recentAgenda.length > 0) {
+        agendaGrid.innerHTML = recentAgenda.map(a => `
+          <div class="agenda-card fade-in">
+            <div class="agenda-card-header">
+              <div class="agenda-card-date">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                  <line x1="16" y1="2" x2="16" y2="6"></line>
+                  <line x1="8" y1="2" x2="8" y2="6"></line>
+                  <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+                ${Utils.formatDate(a.tanggal)}
+              </div>
+              <h3 class="agenda-card-title">${Utils.escapeHtml(a.judul)}</h3>
+              <span class="agenda-card-badge">${a.tahun}</span>
+            </div>
+            <div class="agenda-card-body">
+              <p class="agenda-card-description">${Utils.escapeHtml(a.deskripsi)}</p>
+            </div>
+          </div>
+        `).join('');
+      } else {
+        agendaGrid.innerHTML = '<p class="text-center" style="grid-column: 1/-1;">Belum ada agenda</p>';
+      }
+      
+      // Load recent galeri (4 items)
+      const recentGaleri = galeri.slice(0, 4);
+      const galeriGrid = document.getElementById('home-galeri-grid');
+      
+      if (recentGaleri.length > 0) {
+        galeriGrid.innerHTML = recentGaleri.map(g => `
+          <div class="galeri-item fade-in" onclick="GaleriPage.showLightbox(${g.id})">
+            <img src="${g.foto || 'assets/img/galeri/default.svg'}" alt="${Utils.escapeHtml(g.judul)}">
+            <div class="galeri-overlay">
+              <div class="galeri-overlay-text">
+                <h4 class="galeri-overlay-title">${Utils.escapeHtml(g.judul)}</h4>
+              </div>
+            </div>
+          </div>
+        `).join('');
+      } else {
+        galeriGrid.innerHTML = '<p class="text-center" style="grid-column: 1/-1;">Belum ada foto</p>';
+      }
+    });
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,91 @@
+[
+{
+    "id": 1,
+    "nama": "Ahmad Fauzi",
+    "pekerjaan": "Mahasiswa Teknik Informatika",
+    "foto": "assets/img/alumni/default.svg",
+    "tahun_lulus": "2017",
+    "kontak": {
+      "email": "ahmad@example.com",
+      "whatsapp": "+6281234567891"
+    }
+  },
+  {
+    "id": 2,
+    "nama": "Siti Nurhaliza",
+    "pekerjaan": "Mahasiswa Kedokteran",
+    "foto": "assets/img/alumni/default.svg",
+    "tahun_lulus": "2017",
+    "kontak": {
+      "email": "siti@example.com",
+      "whatsapp": "+6281234567892"
+    }
+  },
+  {
+    "id": 3,
+    "nama": "Budi Santoso",
+    "pekerjaan": "Guru SD",
+    "foto": "assets/img/alumni/default.svg",
+    "tahun_lulus": "2017",
+    "kontak": {
+      "email": "budi@example.com",
+      "whatsapp": "+6281234567893"
+    }
+  },
+  {
+    "id": 4,
+    "nama": "Dewi Lestari",
+    "pekerjaan": "Mahasiswa Psikologi",
+    "foto": "assets/img/alumni/default.svg",
+    "tahun_lulus": "2017",
+    "kontak": {
+      "email": "dewi@example.com",
+      "whatsapp": "+6281234567894"
+    }
+  },
+  {
+    "id": 5,
+    "nama": "Rendi Pratama",
+    "pekerjaan": "Wirausaha",
+    "foto": "assets/img/alumni/default.svg",
+    "tahun_lulus": "2017",
+    "kontak": {
+      "email": "rendi@example.com",
+      "whatsapp": "+6281234567895"
+    }
+  },
+  {
+    "id": 6,
+    "nama": "Nisa Khoirunnisa",
+    "pekerjaan": "Siswa SMA",
+    "foto": "assets/img/alumni/default.svg",
+    "tahun_lulus": "2017",
+    "kontak": {
+      "email": "nisa@example.com",
+      "whatsapp": "+6281234567896"
+    }
+  },
+  {
+    "id": 7,
+    "nama": "Fajar Nugroho",
+    "pekerjaan": "Mahasiswa Teknik Mesin",
+    "foto": "assets/img/alumni/default.svg",
+    "tahun_lulus": "2017",
+    "kontak": {
+      "email": "fajar@example.com",
+      "whatsapp": "+6281234567897"
+    }
+  },
+  {
+    "id": 8,
+    "nama": "Putri Ayu",
+    "pekerjaan": "Mahasiswa Seni Rupa",
+    "foto": "assets/img/alumni/default.svg",
+    "tahun_lulus": "2017",
+    "kontak": {
+      "email": "putri@example.com",
+      "whatsapp": "+6281234567898"
+    }
+  }
+]
+
